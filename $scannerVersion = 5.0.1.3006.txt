@@ -1,0 +1,15 @@
+$scannerVersion = "5.0.1.3006"
+$scannerUrl = "https://binaries.sonarsource.com/Distribution/sonar-scanner-cli/sonar-scanner-cli-$scannerVersion-windows.zip"
+$scannerPath = "C:\SonarScanner"
+
+# Crear carpeta de instalación
+New-Item -ItemType Directory -Path $scannerPath -Force
+
+# Descargar el archivo ZIP
+Invoke-WebRequest -Uri $scannerUrl -OutFile "$scannerPath\sonar-scanner.zip"
+
+# Extraer el archivo
+Expand-Archive -Path "$scannerPath\sonar-scanner.zip" -DestinationPath $scannerPath -Force
+
+# Renombrar la carpeta principal
+Rename-Item -Path "$scannerPath\sonar-scanner-$scannerVersion-windows" -NewName "sonar-scanner"
