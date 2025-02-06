@@ -1,0 +1,47 @@
+Comandos principales Google Hacking
+
+A continuacin se muestran los comandos principales que podemos utilizar con Google. Hay que tener en cuenta que todos ellos deben ir seguidos (sin espacios) de la consulta que quiere realizarse:
+
+    define:trmino - Se muestran definiciones procedentes de pginas web para el trmino buscado.
+
+    filetype:trmino - Las bsquedas se restringen a pginas cuyos nombres acaben en el trmino especificado. Sobretodo se utiliza para determinar la extensin de los ficheros requeridos. Nota: el comando ext:trmino se usa de manera equivalente.
+
+    site:sitio/dominio - Los resultados se restringen a los contenidos en el sitio o dominio especificado. Muy til para realizar bsquedas en sitios que no tienen buscadores internos propios.
+
+    link:url - Muestra pginas que apuntan a la definida por dicha url. La cantidad (y calidad) de los enlaces a una pgina determina su relevancia para los buscadores. Nota: slo presenta aquellas pginas con pagerank 5 o ms.
+
+    cache:url - Se mostrar la versin de la pgina definida por url que Google tiene en su memoria, es decir, la copia que hizo el robot de Google la ltima vez que pas por dicha pgina.
+
+    info:url - Google presentar informacin sobre la pgina web que corresponde con la url.
+
+    related:url - Google mostrar pginas similares a la que especifica la url.  Nota: Es difcil entender que tipo de relacin tiene en cuenta Google para mostrar dichas pginas. Muchas veces carece de utilidad.
+
+    allinanchor:trminos - Google restringe las bsquedas a aquellas pginas apuntadas por enlaces donde el texto contiene los trminos buscados.
+
+    inanchor:trmino - Las bsquedas se restringen a aquellas apuntadas por enlaces donde el texto contiene el trmino especificado. A diferencia de allinanchor se puede combinar con la bsqueda habitual.
+
+    allintext:trminos - Se restringen las bsquedas a los resultados que contienen los trminos en el texto de la pgina.
+
+    intext:trmino - Restringe los resultados a aquellos textos que contienen trmino en el texto. A diferencia de allintext se puede combinar con la bsqueda habitual de trminos.
+
+    allinurl:trminos - Slo se presentan los resultados que contienen los trminos buscados en la url.
+
+    inurl:trmino - Los resultados se restringen a aquellos que contienen trmino en la url. A diferencia de allinurl se puede combinar con la bsqueda habitual de trminos.
+
+    allintitle:trminos - Restringe los resultados a aquellos que contienen los trminos en el ttulo.
+
+    intitle:trmino - Restringe los resultados a aquellos documentos que contienen trmino en el ttulo. A diferencia de allintitle se puede combinar con la bsqueda habitual de trminos.
+
+Operadores Booleanos Google Hacking
+
+Google hace uso de los operadores booleanos para realizar bsquedas combinadas de varios trminos. Esos operadores son una serie de smbolos que Google reconoce y modifican la bsqueda realizada:
+
+    " " - Busca las palabras exactas.
+
+    - - Excluye una palabra de la bsqueda. (Ej: gmail -hotmail, busca pginas en las que aparezca la palabra gmail y no aparezca la palabra hotmail)
+
+    OR ( |) - Busca pginas que contengan un trmino u otro.
+
+    + - Permite incluir palabras que Google por defecto no tiene en cuenta al ser muy comunes (en espaol: "de", "el", "la".....). Tambin se usa para que Google distinga acentos, diresis y la letra , que normalmente son elementos que no distingue.
+
+    * - Comodn. Utilizado para sustituir una palabra. Suele combinarse con el operador de literalidad (" ").
